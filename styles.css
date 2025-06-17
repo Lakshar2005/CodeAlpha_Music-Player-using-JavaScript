@@ -1,0 +1,84 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #121212;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 50px;
+}
+
+.player {
+  background: #1f1f1f;
+  padding: 30px;
+  border-radius: 12px;
+  width: 400px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.5);
+  text-align: center;
+}
+
+h2, h4 {
+  margin: 0;
+  padding: 5px;
+}
+
+.controls {
+  margin: 20px 0;
+}
+
+.controls button {
+  font-size: 20px;
+  margin: 0 10px;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  background: #333;
+  color: white;
+  cursor: pointer;
+}
+
+.controls button:hover {
+  background: #444;
+}
+
+.progress-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 15px 0;
+}
+
+#progress-bar {
+  flex: 1;
+}
+
+.volume-control {
+  margin-bottom: 20px;
+}
+
+.volume-control input {
+  width: 100%;
+}
+
+.playlist {
+  text-align: left;
+  background: #2c2c2c;
+  border-radius: 8px;
+  padding: 10px;
+  max-height: 150px;
+  overflow-y: auto;
+}
+
+.playlist-item {
+  padding: 8px;
+  border-bottom: 1px solid #444;
+  cursor: pointer;
+}
+
+.playlist-item:hover {
+  background: #3a3a3a;
+}
+
+.playing {
+  background: #555 !important;
+}

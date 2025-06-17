@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Advanced Music Player</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="player">
+    <h2 id="song-title">Title</h2>
+    <h4 id="song-artist">Artist</h4>
+    
+    <audio id="audio"></audio>
+
+    <div class="controls">
+      <button id="prev">&#9664;&#9664;</button>
+      <button id="play">&#9654;</button>
+      <button id="next">&#9654;&#9654;</button>
+    </div>
+
+    <div class="progress-container">
+      <span id="current-time">0:00</span>
+      <input type="range" id="progress-bar" value="0" />
+      <span id="duration">0:00</span>
+    </div>
+
+    <div class="volume-control">
+      <label for="volume">🔊</label>
+      <input type="range" id="volume" min="0" max="1" step="0.01" value="1" />
+    </div>
+
+    <div class="playlist" id="playlist">
+      <!-- Playlist items will be added here -->
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
